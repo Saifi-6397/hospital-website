@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*start header*/
+
+.scroll {
+    background-color: whitesmoke;
+    box-shadow: 0.3rem 0.2rem 0.5rem #354046;
+}
+
+header {
+    width: 100%;
+    /* height: 8vh; */
+    position: fixed;
+    z-index: 10;
+    padding-bottom: 0.5%;
+}
+
+.inner {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1% 1%;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    float: left;
+    color: #354046;
+    font-size: 1.3rem;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+nav li a {
+    font-size: 1.3rem;
+    color: #354046;
+}
+
+nav ul li a:hover,
+nav .active {
+    color: #92e3a9;
+}
+
+.toggle-btn {
+    float: right;
+    display: none;
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+}
+
+.lightgreen {
+    color: #92e3a9;
+}
+
+
+/*end header*/
+
+
+/* start home section */
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .image-section,
+.home .content {
+    width: 48%;
+}
+
+.home .content {
+    padding-left: 11rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.content h1 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.home img {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.btn-1 {
+    padding: 0.5rem 1.5rem;
+    border: 0;
+    background-color: #92e3a9;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    color: #354046;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-1:hover {
+    background-color: transparent;
+    border-bottom: 3px solid #92e3a9;
+    color: black;
+}
+
+
+/* end home section */
+
+
+/*start about section*/
+
+.about {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.about .left,
+.about .right {
+    width: 45%;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.about .fas {
+    color: #92e3a9;
+    padding-right: 0.56rem;
+    font-size: 2.1rem;
+}
+
+.about p {
+    line-height: 1.5rem;
+}
+
+.about img {
+    width: 100%;
+}
+
+
+/*end about section*/
+
+
+/*start facility section*/
+
+
+/* 
+.facility {
+    width: 100%;
+    background-color: cornflowerblue;
+} */
+
+.gallery-section {
+    width: 100%;
+}
+
+.facility h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #354046;
+    padding-top: 2rem;
+}
+
+.gallery-section ul {
+    width: 100%;
+    list-style: none;
+    padding: 3rem;
+}
+
+.gallery-section li {
+    width: 32.8%;
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+
+.gallery-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-section li:hover {
+    transform: scale(1.1);
+}
+
+
+/*end facility section*/
+
+
+/*start review section*/
+
+.review {
+    width: 100%;
+    background-image: url(../images/review.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 3rem 0;
+}
+
+
+/* .review::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-color: rgba(29, 25, 25, 0.5);
+} */
+
+.review-main {
+    width: 100%;
+}
+
+.review h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: #354046;
+}
+
+.review .box {
+    width: 100%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.3rem 0.5rem #354046;
+}
+
+.review .person {
+    margin-top: 2rem;
+}
+
+.review p {
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.review .person img {
+    width: 35%;
+    border-radius: 100%;
+}
+
+.review-icon-section {
+    width: 100%;
+    /* background-color: whitesmoke; */
+    padding: 3rem;
+    text-align: center;
+}
+
+.main-box {
+    padding: 2rem;
+}
+
+.main-box .icon {
+    width: 25%;
+}
+
+.main-box .fas {
+    font-size: 3rem;
+    color: #92e3a9;
+    margin: 1rem 0;
+}
+
+.main-box h5,
+.main-box h1 {
+    color: #354046;
+}
+
+.review-icon-section .main-box h5 {
+    font-size: 1.5rem;
+    padding-top: 0.8rem;
+}
+
+
+/*end review section*/
+
+
+/*start contact*/
+
+.contact {
+    width: 100%;
+    background-color: rgb(59, 57, 57);
+    padding: 3rem 0;
+}
+
+.contact h1 {
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+.form-field .name {
+    width: 48%;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    height: 2.8rem;
+    border-radius: 0.3rem;
+    padding-left: 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.appointment {
+    text-align: center;
+}
+
+.app-btn {
+    padding: 0.5rem 2.5rem;
+}
+
+.app-btn:hover {
+    color: white;
+}
+
+
+/*end contact*/
+
+
+/*start post section*/
+
+.post {
+    padding: 3rem 0;
+}
+
+.post h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #354046;
+    padding-bottom: 2rem;
+}
+
+.post-main-box {
+    width: 100%;
+}
+
+.post .post-box {
+    width: 28%;
+    border: 1px solid #9fa1a1;
+    border-radius: 0.4rem;
+    background-color: white;
+    box-shadow: 0 0 0.5rem #989a9b;
+}
+
+.post .post-text {
+    padding: 1rem;
+}
+
+.post h2 {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.post p {
+    line-height: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+
+/*end post section*/
+
+
+/*start footer */
+
+footer {
+    width: 100%;
+    background-color: rgb(59, 57, 57);
+    color: white;
+    padding: 3rem 0;
+}
+
+.link-box,
+.share-box,
+.logo-box {
+    width: 30%;
+}
+
+footer .logo-box h1 {
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.logo-box p {
+    line-height: 1.7rem;
+}
+
+.link-box h1,
+.share-box h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
+    margin: 0.7rem 0;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #92e3a9;
+}
+
+footer .fab {
+    font-size: 2rem;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+
+/*end footer*/
+
+
+/* start media queries */
+
+@media(max-width:768px) {
+    html {
+        font-size: 13px;
+    }
+    .inner {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .logo {
+        margin-top: 0.3rem;
+    }
+    nav ul {
+        width: 93%;
+        margin: 0 auto;
+        position: fixed;
+        top: 4rem;
+        /* left: 0; */
+        display: none;
+        background-color: white;
+        border: 1px solid #92e3a9;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        /* margin: 0.8rem 0; */
+        padding: 0.5rem;
+    }
+    nav ul li:hover {
+        background-color: whitesmoke;
+    }
+    .home .image-section,
+    .home .content {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+    .home h1 {
+        font-size: 1.7rem;
+    }
+    .about {
+        padding: 3rem 0;
+    }
+    .about .left,
+    .about .right {
+        width: 100%;
+    }
+    .about .right {
+        display: none;
+    }
+    .facility h1,
+    .review h1,
+    .contact h1,
+    .post h1 {
+        font-size: 2rem;
+    }
+    .gallery-section li {
+        width: 100%;
+        margin-top: 0.3rem;
+        overflow: hidden;
+    }
+    .main-box .icon {
+        width: 50%;
+    }
+    .main-box .fas {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .main-box h1 {
+        font-size: 1.1rem;
+    }
+    .main-box h5 {
+        font-size: 1.2rem;
+    }
+    .review-icon-section .main-box h5 {
+        font-size: 1.1rem;
+    }
+    .contact {
+        padding: 3rem 0;
+    }
+    .form-field .name {
+        width: 100%;
+    }
+    .post .post-box {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .link-box,
+    .share-box,
+    .logo-box {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    footer li {
+        display: inline-block;
+        padding: 0 0.7rem;
+        margin-top: 1rem;
+    }
+}
