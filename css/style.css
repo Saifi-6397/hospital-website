@@ -470,7 +470,7 @@ footer .fab {
 
 /* start media queries */
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     html {
         font-size: 13px;
     }
@@ -535,10 +535,13 @@ footer .fab {
         overflow: hidden;
     }
     .main-box .icon {
-        width: 50%;
+        width: 30%;
+    }
+    #icon-4 {
+        margin-left: 35%;
     }
     .main-box .fas {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-top: 2rem;
     }
     .main-box h1 {
