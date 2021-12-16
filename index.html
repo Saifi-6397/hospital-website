@@ -234,30 +234,34 @@
     <section class="contact" id="contact">
         <div class="inner">
             <h1>'make an appointment'</h1>
-            <form action="" data-aos="flip-up">
+            <form action="" onsubmit="return Validation();" data-aos="flip-up">
                 <div class="form-field flex-box">
                     <div class="name">
-                        <input type="text" placeholder="Full Name">
+                        <input type="text" id="name" placeholder="Full Name">
+                        <p class="error" id="name_error"></p>
                     </div>
                     <div class="name phone">
-                        <input type="number" placeholder="Phone">
+                        <input type="number" id="phone" placeholder="Phone">
+                        <p class="error" id="phone_error"></p>
                     </div>
                     <div class="name email">
-                        <input type="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="Email" style="text-transform: lowercase;">
+                        <p class="error" id="email_error"></p>
                     </div>
                     <div class="name dropdown">
-                        <select>
+                        <select id="dropdown">
                         <option value="" selected>Make an Appointment</option>
                         <option>09-11 Am</option>
                         <option>12-03 Pm</option>
                         <option>03-06 Pm</option>
                         <option>09-11 Pm</option>
                          </select>
+                        <p class="error" id="dropdown_error"></p>
                     </div>
                     <textarea name="" id="" cols="146" rows="8" placeholder="Hello Everyone..."></textarea>
                 </div>
                 <div class="appointment">
-                    <a href="#" class="btn-1 app-btn">make appointment</a>
+                    <button class="btn-1 app-btn">make appointment</button>
                 </div>
             </form>
         </div>
@@ -307,11 +311,11 @@
     <footer>
         <div class="inner">
             <div class="footer-content flex-box">
-                <div class="logo-box" data-aos="fade-right">
+                <div class="logo-box">
                     <h1><span class="lightgreen">H</span>eaith<span class="lightgreen" s>C</span>are.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam nulla cumque porro hic, impedit minus iure natus magni iusto deleniti labore, saepe culpa inventore, ratione numquam ducimus nisi eos.</p>
                 </div>
-                <div class="link-box" data-aos="fade-up">
+                <div class="link-box">
                     <h1>links</h1>
                     <ul>
                         <li><a href="#">home</a></li>
@@ -322,7 +326,7 @@
                         <li><a href="#">post</a></li>
                     </ul>
                 </div>
-                <div class="share-box" data-aos="fade-left">
+                <div class="share-box">
                     <h1>share</h1>
                     <ul>
                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>

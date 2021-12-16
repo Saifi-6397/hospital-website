@@ -37,7 +37,7 @@ header {
 }
 
 .inner {
-    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1% 1%;
     /* border: 1px solid red; */
@@ -71,7 +71,7 @@ nav .active {
 .toggle-btn {
     float: right;
     display: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-top: 0.8rem;
 }
 
@@ -247,11 +247,10 @@ nav .active {
 }
 
 .review .box {
-    width: 100%;
+    /* width: 100%; */
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.4rem;
-    box-shadow: 0.1rem 0.3rem 0.5rem #354046;
 }
 
 .review .person {
@@ -346,12 +345,24 @@ textarea {
     text-align: center;
 }
 
+.appointment button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-color: #92e3a9;
+}
+
 .app-btn {
     padding: 0.5rem 2.5rem;
 }
 
 .app-btn:hover {
     color: white;
+}
+
+.error {
+    color: red;
+    font-size: 1.1rem;
 }
 
 
@@ -470,13 +481,12 @@ footer .fab {
 
 /* start media queries */
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     html {
         font-size: 13px;
     }
     .inner {
         width: 95%;
-        margin: 0 auto;
     }
     .toggle-btn {
         display: block;
@@ -532,6 +542,7 @@ footer .fab {
     .gallery-section li {
         width: 100%;
         margin-top: 0.3rem;
+        margin: 1rem 0;
         overflow: hidden;
     }
     .main-box .icon {
@@ -561,7 +572,7 @@ footer .fab {
     }
     .post .post-box {
         width: 100%;
-        margin-top: 1rem;
+        margin: 2rem 0;
     }
     .link-box,
     .share-box,
