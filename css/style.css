@@ -224,17 +224,6 @@ nav .active {
     padding: 3rem 0;
 }
 
-
-/* .review::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 95vh;
-    background-color: rgba(29, 25, 25, 0.5);
-} */
-
 .review-main {
     width: 100%;
 }
@@ -247,10 +236,11 @@ nav .active {
 }
 
 .review .box {
-    /* width: 100%; */
+    width: 85%;
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.4rem;
+    margin: 0 2rem;
 }
 
 .review .person {
@@ -585,5 +575,11 @@ footer .fab {
         display: inline-block;
         padding: 0 0.7rem;
         margin-top: 1rem;
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    .inner {
+        max-width: 90%;
     }
 }

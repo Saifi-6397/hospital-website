@@ -23,7 +23,7 @@ $(function() {
     //owl crousel
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 0,
         autoplay: true,
         autoplayTimeout: 2000,
         nav: false,
@@ -33,14 +33,12 @@ $(function() {
             },
             600: {
                 items: 2,
-                margin: 30,
             },
             900: {
                 items: 3,
-                margin: 60,
             },
             1400: {
-                items: 5
+                items: 4
             }
         }
     })
@@ -48,7 +46,7 @@ $(function() {
     //aos animation
     AOS.init({
         duration: 1000,
-        delay: 400,
+        delay: 300,
     });
 })
 
